@@ -22,7 +22,7 @@ public class StringTest {
 	@Test
 	public void testStringFormat() {
 		System.out.println(String.format("%2$08d\n%1$ 9d", -3123, -5566));
-		System.out.printf("%2$d\n%1$ 9d\n", -3123, -5566);
+		System.out.printf("%2$d\n%1$ 9d%n", -3123, -5566);
 		System.out.println(String.format("%,d", Integer.MAX_VALUE));
 		System.out.println(String.format("%tR", System.currentTimeMillis()));
 		System.out.println(String.format("%tD", new Date()));
