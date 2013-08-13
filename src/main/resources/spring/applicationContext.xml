@@ -32,7 +32,7 @@
 	<dubbo:application name="jpetstore"/>
 	<dubbo:registry id="dubboRegistry" address="zookeeper://192.168.1.109:2181"/>
 	
-	<dubbo:service interface="com.colomob.gmtool.service.DubboService" ref="dubboService" version="1.0.1"/>
+	<dubbo:service interface="com.colomob.shared.gmtool.service.DubboService" ref="dubboService" version="1.0.1"/>
 
    <!-- in-memory database and a datasource -->
     <jdbc:embedded-database id="dataSource">

@@ -11,7 +11,7 @@ package com.colomob.gmtool.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.colomob.gmtool.service.DubboService;
+import com.colomob.shared.gmtool.service.DubboService;
 
 /**
  * @author baowp
