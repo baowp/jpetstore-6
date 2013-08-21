@@ -11,14 +11,12 @@ package com.colomob.gmtool.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.colomob.shared.gmtool.service.DubboService;
-
 /**
  * @author baowp
  * 
  */
 @Service("dubboService")
-public class DubboServiceImpl implements DubboService {
+public class DubboServiceImpl /* implements DubboSampleService */{
 
 	public String hello(String name) {
 		System.out.println(name);
