@@ -9,6 +9,8 @@
  */
 package org.mydomain.app.primary;
 
+import java.io.Serializable;
+
 /**
  * @author baowp
  * 
@@ -47,12 +49,18 @@ public class PrivateTest {
 		public B(String str) {
 			super(str);
 		}
+
+		public <T extends Object> void con(T s) {
+		}
 	}
 
-	public static class C extends A {
+	public static class C extends B {
 
 		public C(String str) {
 			super(str);
+		}
+
+		public <T extends Serializable> void con(T s) {
 		}
 	}
 }
