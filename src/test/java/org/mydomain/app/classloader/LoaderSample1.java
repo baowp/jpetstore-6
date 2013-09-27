@@ -9,12 +9,18 @@
  */
 package org.mydomain.app.classloader;
 
+import java.io.InputStream;
+
+import org.junit.Test;
+
 /**
  * @author baowp
  * @see http://www.blogjava.net/mstar/archive/2012/12/14/65505.html
  */
 public class LoaderSample1 {
-	public static void main(String[] args) {
+
+	@Test
+	public void main() {
 		Class<?> c;
 		ClassLoader cl;
 		cl = ClassLoader.getSystemClassLoader();
@@ -35,5 +41,12 @@ public class LoaderSample1 {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Test
+	public void test1() {
+		InputStream is = ClassLoader
+				.getSystemResourceAsStream("org/mydomain/app/classloader/classes.dex");
+		System.out.println(is);
 	}
 }

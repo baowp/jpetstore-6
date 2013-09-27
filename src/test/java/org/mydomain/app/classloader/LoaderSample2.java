@@ -32,5 +32,8 @@ public class LoaderSample2 {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		Package p = Package.getPackage("org.mydomain.app.classloader");
+
 	}
 }
